@@ -15,8 +15,8 @@
 		634F843C2B13E22100C7FC04 /* iosAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634F843B2B13E22100C7FC04 /* iosAppTests.swift */; };
 		634F84462B13E22100C7FC04 /* iosAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634F84452B13E22100C7FC04 /* iosAppUITests.swift */; };
 		634F84482B13E22100C7FC04 /* iosAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634F84472B13E22100C7FC04 /* iosAppUITestsLaunchTests.swift */; };
-		8C3DDA292B9E4FED004E6C6B /* qrose.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3DDA282B9E4FED004E6C6B /* qrose.xcframework */; };
-		8C3DDA2A2B9E4FED004E6C6B /* qrose.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3DDA282B9E4FED004E6C6B /* qrose.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8CE64A922BA09F1D00B7399A /* qrose.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE64A912BA09F1D00B7399A /* qrose.xcframework */; };
+		8CE64A932BA09F1D00B7399A /* qrose.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE64A912BA09F1D00B7399A /* qrose.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8C3DDA2A2B9E4FED004E6C6B /* qrose.xcframework in Embed Frameworks */,
+				8CE64A932BA09F1D00B7399A /* qrose.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +62,7 @@
 		634F84412B13E22100C7FC04 /* iosAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		634F84452B13E22100C7FC04 /* iosAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosAppUITests.swift; sourceTree = "<group>"; };
 		634F84472B13E22100C7FC04 /* iosAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8C3DDA282B9E4FED004E6C6B /* qrose.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = qrose.xcframework; path = ../../qrose.xcframework; sourceTree = "<group>"; };
+		8CE64A912BA09F1D00B7399A /* qrose.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = qrose.xcframework; path = ../../../../qrose.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C3DDA292B9E4FED004E6C6B /* qrose.xcframework in Frameworks */,
+				8CE64A922BA09F1D00B7399A /* qrose.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +168,7 @@
 		8C3DDA232B9E3292004E6C6B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8C3DDA282B9E4FED004E6C6B /* qrose.xcframework */,
+				8CE64A912BA09F1D00B7399A /* qrose.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

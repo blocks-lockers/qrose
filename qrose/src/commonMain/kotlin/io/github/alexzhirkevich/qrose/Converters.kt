@@ -9,6 +9,9 @@ import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.LayoutDirection
 
+//import org.jetbrains.skia.Bitmap
+//import org.jetbrains.skia.Image
+
 expect enum class ImageFormat {
     PNG, JPEG, WEBP
 }
@@ -52,4 +55,8 @@ fun Painter.toImageBitmap(
 //fun PainterFromBitmap(byteImage: ByteArray) : Painter {
 //    val composeImageBitmap = Bitmap.makeFromImage(Image.makeFromEncoded(byteImage)).asComposeImageBitmap()
 //    return BitmapPainter(image = composeImageBitmap)
+//}
+//
+//fun PainterFromVector(byteImage: ByteArray) : Painter {
+//    return PainterFromVector(byteImage)
 //}

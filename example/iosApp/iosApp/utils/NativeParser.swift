@@ -43,4 +43,5 @@ extension Data {
 enum KotlinColor {
     static let Blue: UInt64 = 18374687574888284160
     static let Red: UInt64 = 18446462598732840960
+    static let BlocksBlue: UInt64 = 18385198906049822720
 }
