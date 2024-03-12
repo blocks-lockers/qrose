@@ -30,9 +30,15 @@ struct ContentView: View {
     init() {
         let qrShapes = QrShapes(
             code: QrCodeShapeCompanion.shared.Default,
-            darkPixel: QrPixelShapeCompanion.shared.roundCorners(radius: 0.5),
+            darkPixel: QrPixelShapeCompanion.shared.square(size: 0.8),
             lightPixel: QrPixelShapeCompanion.shared.Default,
-            ball: QrBallShapeCompanion.shared.circle(size: 1),
+            ball: QrBallShapeCompanion.shared.roundCorners(
+                radius: 0.25,
+                topLeft: true,
+                bottomLeft: true,
+                topRight: true,
+                bottomRight: true
+            ),
             frame: QrFrameShapeCompanion.shared.roundCorners(
                 corner: 0.25,
                 width: 1,
