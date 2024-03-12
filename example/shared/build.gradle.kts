@@ -46,7 +46,6 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation(project(":qrose"))
-                implementation(project(":qrose-oned"))
                 implementation(compose.ui)
                 implementation(compose.runtime)
                 implementation(compose.material3)

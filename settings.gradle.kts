@@ -18,8 +18,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "QRose"
 include(":qrose")
-include(":qrose-core")
-include(":qrose-oned")
 
 include(":example:desktopApp")
 include(":example:webApp")

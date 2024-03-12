@@ -48,3 +48,8 @@ fun Painter.toImageBitmap(
 
     return bmp
 }
+
+//fun PainterFromBitmap(byteImage: ByteArray) : Painter {
+//    val composeImageBitmap = Bitmap.makeFromImage(Image.makeFromEncoded(byteImage)).asComposeImageBitmap()
+//    return BitmapPainter(image = composeImageBitmap)
+//}

@@ -1,6 +1,7 @@
 @file:OptIn(ExperimentalResourceApi::class)
 
 package io.github.alexzhirkevich.shared
+
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Column
@@ -30,8 +31,6 @@ import androidx.compose.ui.unit.dp
 import io.github.alexzhirkevich.qrose.DelicateQRoseApi
 import io.github.alexzhirkevich.qrose.QrData
 import io.github.alexzhirkevich.qrose.email
-import io.github.alexzhirkevich.qrose.oned.BarcodeType
-import io.github.alexzhirkevich.qrose.oned.rememberBarcodePainter
 import io.github.alexzhirkevich.qrose.options.QrBallShape
 import io.github.alexzhirkevich.qrose.options.QrBrush
 import io.github.alexzhirkevich.qrose.options.QrCodeShape
@@ -47,7 +46,6 @@ import io.github.alexzhirkevich.qrose.options.image
 import io.github.alexzhirkevich.qrose.options.roundCorners
 import io.github.alexzhirkevich.qrose.options.solid
 import io.github.alexzhirkevich.qrose.rememberQrCodePainter
-import io.github.alexzhirkevich.qrose.toByteArray
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.painterResource
 import qrose.example.shared.generated.resources.Res
@@ -63,16 +61,17 @@ fun App() {
 @Composable
 fun AllBarcodes() {
     FlowRow(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
-        OnedCode("ITF", rememberBarcodePainter("123456734512", BarcodeType.ITF))
-        OnedCode("UPC E", rememberBarcodePainter("02345673", BarcodeType.UPCE))
-        OnedCode("UPC A", rememberBarcodePainter("123456789012", BarcodeType.UPCA))
-        OnedCode("EAN 13", rememberBarcodePainter("9780201379624", BarcodeType.EAN13))
-        OnedCode("EAN 8", rememberBarcodePainter("1234567", BarcodeType.EAN8))
-        OnedCode("Code 39", rememberBarcodePainter("TEST", BarcodeType.Code39))
-        OnedCode("Code 93", rememberBarcodePainter("TEST", BarcodeType.Code93))
-        OnedCode("Code 128", rememberBarcodePainter("test", BarcodeType.Code128))
-        OnedCode("Codabar", rememberBarcodePainter("A23342453D", BarcodeType.Codabar))
-        OnedCode("QR", rememberQrCodePainter("https://github.com/alexzhirkevich/qrose"))
+//        OnedCode("ITF", rememberBarcodePainter("123456734512", BarcodeType.ITF))
+//        OnedCode("UPC E", rememberBarcodePainter("02345673", BarcodeType.UPCE))
+//        OnedCode("UPC A", rememberBarcodePainter("123456789012", BarcodeType.UPCA))
+//        OnedCode("EAN 13", rememberBarcodePainter("9780201379624", BarcodeType.EAN13))
+//        OnedCode("EAN 8", rememberBarcodePainter("1234567", BarcodeType.EAN8))
+//        OnedCode("Code 39", rememberBarcodePainter("TEST", BarcodeType.Code39))
+//        OnedCode("Code 93", rememberBarcodePainter("TEST", BarcodeType.Code93))
+//        OnedCode("Code 128", rememberBarcodePainter("test", BarcodeType.Code128))
+//        OnedCode("Codabar", rememberBarcodePainter("A23342453D", BarcodeType.Codabar))
+//        OnedCode("QR", rememberQrCodePainter("https://github.com/alexzhirkevich/qrose"))
+        QrCode()
     }
 }
 
@@ -110,6 +109,12 @@ fun QrCode(){
     val bg = painterResource(Res.drawable.jcbg)
 
     val logo = painterResource(Res.drawable.jc)
+
+
+//    val bitmap = (image.getDrawable() as BitmapDrawable).getBitmap()
+//    val stream = ByteArrayOutputStream()
+//    bitmap.compress(Bitmap.CompressFormat.PNG, 90, stream)
+//    val image = stream.toByteArray()
 
     val painter = rememberQrCodePainter(text) {
         logo {

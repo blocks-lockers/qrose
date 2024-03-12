@@ -64,9 +64,19 @@ subprojects {
                 }
             }
         }
-        iosArm64()
-        iosX64()
-        iosSimulatorArm64()
+//        iosArm64()
+//        iosX64()
+//        iosSimulatorArm64()
+        listOf(
+            iosX64(),
+            iosArm64(),
+            iosSimulatorArm64(),
+        ).forEach {
+            it.binaries.framework {
+                baseName = "${baseName.replace('-','.')}"
+                isStatic = true
+            }
+        }
         js(IR) {
             browser()
         }

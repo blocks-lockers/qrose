@@ -4,7 +4,6 @@ import androidx.compose.material.Text
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
-import com.google.zxing.oned.UPCEWriter
 import io.github.alexzhirkevich.shared.App
 import java.time.Instant
 import java.time.LocalDate
